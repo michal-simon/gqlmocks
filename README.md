@@ -15,7 +15,7 @@ services:
   graphql-api-mock:
     image: michalsimon/gqlmocks:latest
     volumes:
-      - ./schema:/schema/
+      - ./api.graphql:/gqlmocks/schema.graphql
     command: npx gqlmocks serve --port=4002 --schema=/schema/schema.graphql
     ports:
       - 4002:4002
@@ -50,7 +50,7 @@ module.exports = new GraphQLHandler({
 });
 ```
 
-To use a custom handler your command needs to have the correct parametr: 
+To use a custom handler your command needs to have the correct parameter: 
 ```bash
-npx gqlmocks serve --port=4002 --schema=/schema/schema.graphql --handler=/schema/handler.js
+npx gqlmocks serve --port=4002 --schema=/schema/schema.graphql --schema=/gqlmocks/schema.graphql
 ```
