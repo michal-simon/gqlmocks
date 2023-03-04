@@ -52,5 +52,5 @@ module.exports = new GraphQLHandler({
 
 To use a custom handler your command needs to have the correct parametr: 
 ```bash
-npx gqlmocks serve --port=4002 --schema=/schema/schema.graphql --handler=schema/handler.js
+npx gqlmocks serve --port=4002 --schema=/schema/schema.graphql --handler=/schema/handler.js
 ```
