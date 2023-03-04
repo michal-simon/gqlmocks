@@ -1,5 +1,7 @@
 # Docker Container for GraphQL Mock Server
 
+[![Codeac.io](https://static.codeac.io/badges/2-609545848.svg "Codeac.io")](https://app.codeac.io/github/michal-simon/gqlmocks)
+
 This container is usefull in you local development environment or for integration testing also locally or in your CI pipeline.
 
 Thanks to module [gqlmocks](http://www.graphql-mocks.com/docs/cli/quick-mocking/) you can simply share a schema of a third party service inside the container and get a fully working GraphQL API.
