@@ -1,5 +1,7 @@
 FROM node:18-alpine
 
-RUN npm install -g gqlmocks@0.4
+WORKDIR /gqlmocks
 
-CMD gqlmocks
+RUN npm install @babel/preset-typescript @babel/preset-env graphql-mocks gqlmocks@0.4
+
+CMD ["npx", "gqlmocks"]
