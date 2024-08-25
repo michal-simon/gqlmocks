@@ -9,8 +9,6 @@ Thanks to module [gqlmocks](http://www.graphql-mocks.com/docs/cli/quick-mocking/
 This is an example of a `docker-compose.yml` you can use:
 
 ```yaml
-version: "3.7"
-
 services:
   graphql-api-mock:
     image: michalsimon/gqlmocks:latest
